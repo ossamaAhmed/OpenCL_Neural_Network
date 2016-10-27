@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7CAA2D911DC18D9400F971FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA2D901DC18D9400F971FD /* main.cpp */; };
+		7CAA2D9B1DC18F9F00F971FD /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAA2D9A1DC18F9F00F971FD /* OpenCL.framework */; };
+		7CAA2DA51DC1AF9400F971FD /* mykernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA2DA41DC1AF9400F971FD /* mykernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		7CAA2D8D1DC18D9400F971FD /* Parallel_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Parallel_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAA2D901DC18D9400F971FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7CAA2D9A1DC18F9F00F971FD /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		7CAA2DA11DC19BD400F971FD /* opencl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencl.h; sourceTree = "<group>"; };
+		7CAA2DA21DC19BED00F971FD /* cl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cl.h; sourceTree = "<group>"; };
+		7CAA2DA31DC19C0300F971FD /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		7CAA2DA41DC1AF9400F971FD /* mykernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = mykernel.cl; path = Build/Products/Debug/mykernel.cl; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CAA2D9B1DC18F9F00F971FD /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,7 @@
 			children = (
 				7CAA2D8F1DC18D9400F971FD /* Parallel_Project */,
 				7CAA2D8E1DC18D9400F971FD /* Products */,
+				7CAA2D991DC18F9F00F971FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +66,21 @@
 		7CAA2D8F1DC18D9400F971FD /* Parallel_Project */ = {
 			isa = PBXGroup;
 			children = (
+				7CAA2DA41DC1AF9400F971FD /* mykernel.cl */,
 				7CAA2D901DC18D9400F971FD /* main.cpp */,
+				7CAA2DA11DC19BD400F971FD /* opencl.h */,
+				7CAA2DA21DC19BED00F971FD /* cl.h */,
+				7CAA2DA31DC19C0300F971FD /* cl.hpp */,
 			);
 			path = Parallel_Project;
+			sourceTree = "<group>";
+		};
+		7CAA2D991DC18F9F00F971FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CAA2D9A1DC18F9F00F971FD /* OpenCL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CAA2D911DC18D9400F971FD /* main.cpp in Sources */,
+				7CAA2DA51DC1AF9400F971FD /* mykernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
